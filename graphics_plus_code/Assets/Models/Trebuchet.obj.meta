@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: 616cd4502855eab408efbdef8b05c67e
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BODY
+    100002: BODY_Crank
+    100004: BODY_FrontAxil
+    100006: BODY_FrontAxil Ffwheel
+    100008: BODY_FrontAxil Rfwheel
+    100010: BODY_Pivot
+    100012: BODY_RearAxil
+    100014: BODY_RearAxil LrWheel
+    100016: BODY_RearAxil LrWheelPEG
+    100018: BODY_RearAxil RrWheel
+    100020: BODY_RearAxil RrWheelPEG
+    100022: BODY_Throw
+    100024: BODY_Throw Buckets
+    100026: //RootNode
+    400000: BODY
+    400002: BODY_Crank
+    400004: BODY_FrontAxil
+    400006: BODY_FrontAxil Ffwheel
+    400008: BODY_FrontAxil Rfwheel
+    400010: BODY_Pivot
+    400012: BODY_RearAxil
+    400014: BODY_RearAxil LrWheel
+    400016: BODY_RearAxil LrWheelPEG
+    400018: BODY_RearAxil RrWheel
+    400020: BODY_RearAxil RrWheelPEG
+    400022: BODY_Throw
+    400024: BODY_Throw Buckets
+    400026: //RootNode
+    2300000: BODY
+    2300002: BODY_Crank
+    2300004: BODY_FrontAxil
+    2300006: BODY_FrontAxil Ffwheel
+    2300008: BODY_FrontAxil Rfwheel
+    2300010: BODY_Pivot
+    2300012: BODY_RearAxil
+    2300014: BODY_RearAxil LrWheel
+    2300016: BODY_RearAxil LrWheelPEG
+    2300018: BODY_RearAxil RrWheel
+    2300020: BODY_RearAxil RrWheelPEG
+    2300022: BODY_Throw
+    2300024: BODY_Throw Buckets
+    3300000: BODY
+    3300002: BODY_Crank
+    3300004: BODY_FrontAxil
+    3300006: BODY_FrontAxil Ffwheel
+    3300008: BODY_FrontAxil Rfwheel
+    3300010: BODY_Pivot
+    3300012: BODY_RearAxil
+    3300014: BODY_RearAxil LrWheel
+    3300016: BODY_RearAxil LrWheelPEG
+    3300018: BODY_RearAxil RrWheel
+    3300020: BODY_RearAxil RrWheelPEG
+    3300022: BODY_Throw
+    3300024: BODY_Throw Buckets
+    4300000: BODY
+    4300002: BODY_Crank
+    4300004: BODY_FrontAxil
+    4300006: BODY_FrontAxil Ffwheel
+    4300008: BODY_FrontAxil Rfwheel
+    4300010: BODY_Pivot
+    4300012: BODY_RearAxil
+    4300014: BODY_RearAxil LrWheel
+    4300016: BODY_RearAxil LrWheelPEG
+    4300018: BODY_RearAxil RrWheel
+    4300020: BODY_RearAxil RrWheelPEG
+    4300022: BODY_Throw
+    4300024: BODY_Throw Buckets
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

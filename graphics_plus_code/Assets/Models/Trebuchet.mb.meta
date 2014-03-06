@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: 53c97105c30eee7428368847fe5bb0ec
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Buckets
+    100002: Crank
+    100004: Ffwheel
+    100006: FrontAxil
+    100008: LrWheel
+    100010: LrWheelPEG
+    100012: Pivot
+    100014: RearAxil
+    100016: Rfwheel
+    100018: RrWheel
+    100020: RrWheelPEG
+    100022: Throw
+    100024: //RootNode
+    400000: Buckets
+    400002: Crank
+    400004: Ffwheel
+    400006: FrontAxil
+    400008: LrWheel
+    400010: LrWheelPEG
+    400012: Pivot
+    400014: RearAxil
+    400016: Rfwheel
+    400018: RrWheel
+    400020: RrWheelPEG
+    400022: Throw
+    400024: //RootNode
+    2300000: Buckets
+    2300002: Crank
+    2300004: Ffwheel
+    2300006: FrontAxil
+    2300008: LrWheel
+    2300010: LrWheelPEG
+    2300012: Pivot
+    2300014: RearAxil
+    2300016: Rfwheel
+    2300018: RrWheel
+    2300020: RrWheelPEG
+    2300022: Throw
+    2300024: //RootNode
+    3300000: Buckets
+    3300002: Crank
+    3300004: Ffwheel
+    3300006: FrontAxil
+    3300008: LrWheel
+    3300010: LrWheelPEG
+    3300012: Pivot
+    3300014: RearAxil
+    3300016: Rfwheel
+    3300018: RrWheel
+    3300020: RrWheelPEG
+    3300022: Throw
+    3300024: //RootNode
+    4300000: BODY
+    4300002: FrontAxil
+    4300004: Ffwheel
+    4300006: Rfwheel
+    4300008: RearAxil
+    4300010: LrWheelPEG
+    4300012: RrWheelPEG
+    4300014: RrWheel
+    4300016: LrWheel
+    4300018: Crank
+    4300020: Pivot
+    4300022: Throw
+    4300024: Buckets
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
