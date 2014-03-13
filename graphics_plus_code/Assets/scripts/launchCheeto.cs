@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class launchCheeto : MonoBehaviour {
+	
+	public AudioClip launch;
+
 
 	Vector3 vel = new Vector3 (0f, 0f, 0f);
 	Vector3 acc = new Vector3 (0f, 0f, 0f);
@@ -12,6 +15,7 @@ public class launchCheeto : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audio.PlayOneShot (launch);
 		Vector3 flyToPlayer = Camera.main.transform.position - transform.position; // Calculate the vector towards the player.
 		float fMultiplier = Random.value + 0.5f; // Introduce some randomness into the arc.
 		float fReducer = 6.0f;
@@ -30,7 +34,6 @@ public class launchCheeto : MonoBehaviour {
 			vel.y *= -damping;
 			vel.z *= damping;
 		}
-
 		// Apply gravity.
 		applyForce( gravity );
 
@@ -49,8 +52,10 @@ public class launchCheeto : MonoBehaviour {
 		}
 		acc = zeroed;
 	}
+	
 
 	void applyForce ( Vector3 _force ) {
 		acc += _force;
+
 	}
 }

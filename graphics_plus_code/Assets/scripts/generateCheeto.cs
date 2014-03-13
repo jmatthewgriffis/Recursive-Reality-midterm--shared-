@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class generateCheeto : MonoBehaviour {
+
 
 	public Transform projectile; // Must attach the cheeseball prefab in the Inspector so the script knows what to instantiate.
 	float iTimeSinceLastShot = 0;
@@ -16,11 +18,14 @@ public class generateCheeto : MonoBehaviour {
 	void Update () {
 
 		// Firing freqency can be between 2 and 9 seconds, and changes every frame.
-		iFrequencyOfFire = 2.0f + Random.value * 7.0f;
+		iFrequencyOfFire = 5.0f + Random.value * 7.0f;
+
+
 
 		if ( Time.time - iTimeSinceLastShot >= iFrequencyOfFire ) { // If it's been long enough since the last shot...
 			Instantiate(projectile, transform.position, transform.rotation ); // make it a copy of the Tranform we attached in the Inspector...
 			iTimeSinceLastShot = Time.time; // and start over the count until the next shot.
+
 		}
 	}
 }
