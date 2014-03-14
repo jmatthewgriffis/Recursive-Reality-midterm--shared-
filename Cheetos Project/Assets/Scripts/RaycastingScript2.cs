@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RaycastingScript : MonoBehaviour {
+public class RaycastingScript2 : MonoBehaviour {
 
 	public Transform blueprint; //assign in inspector
 	public GameObject putItHere;
@@ -26,7 +26,11 @@ public class RaycastingScript : MonoBehaviour {
 		
 		Debug.Log ("raycasting is working");
 		//Ray ray = Camera.main.ScreenPointToRay (new Vector3(640/2, 800/2));
-		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);//(camera.pixelWidth / 2), (camera.pixelHeight / 2));//Input.mousePosition); //initialize ray 
+
+
+		//Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);//(camera.pixelWidth / 2), (camera.pixelHeight / 2));//Input.mousePosition); //initialize ray 
+		//Ray ray = transform.position;
+
 		//Ray ray = Camera.main.ScreenPointToRay (Camera.main.transform.position);//(camera.pixelWidth / 2), (camera.pixelHeight / 2));//Input.mousePosition); //initialize ray 
 		RaycastHit rayHit = new RaycastHit ();//blank container for info
 
@@ -34,11 +38,15 @@ public class RaycastingScript : MonoBehaviour {
 
 		//if (Physics.Raycast (Camera.main.transform.position, Camera.main.transform.forward, 1000f))
 		//if (Physics.Raycast (Camera.main.transform.position, out rayHit, 1000f))
-		if (Physics.Raycast ( ray, out rayHit, 1000f))
+		//if (Physics.Raycast (ray, out rayHit, 1000f))
+		if (Physics.Raycast (transform.position, transform.forward, out rayHit, 1000f))
 		{
+		    //Debug.DrawRay(ray, Camera.main.transform.forward * rayHit.distance);
 			Debug.Log("RAYCASTING");	
 			collider1 = rayHit.collider;
 			Debug.Log(collider1.name);
+
+
 
 			if (collider1.name == "boxx"){
 				startBox = true;

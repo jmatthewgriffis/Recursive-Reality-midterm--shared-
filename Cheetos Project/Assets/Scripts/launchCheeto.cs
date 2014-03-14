@@ -12,11 +12,18 @@ public class launchCheeto : MonoBehaviour {
 	// Public variables can be seen and adjusted in the Inspector.
 	public Vector3 gravity = new Vector3 (0f, -0.3f, 0f);
 	public float damping = 0.9f; // Friction
+	Vector3 test = new Vector3 (785.9725f, 10.41897f, 1253.68f);
+	public Transform zeObj;
+	public float multiplier;
 
 	// Use this for initialization
 	void Start () {
+		zeObj = GameObject.Find ("patrickB").transform;
 		audio.PlayOneShot (launch);
-		Vector3 flyToPlayer = Camera.main.transform.position - transform.position; // Calculate the vector towards the player.
+		//Vector3 flyToPlayer = Camera.main.transform.position - transform.position; // Calculate the vector towards the player.
+		Vector3 flyToPlayer = zeObj.transform.position - transform.position; // Calculate the vector towards the player.
+		flyToPlayer *= multiplier;
+		//Vector3 flyToPlayer = test - transform.position;
 		float fMultiplier = Random.value + 0.5f; // Introduce some randomness into the arc.
 		float fReducer = 6.0f;
 		applyForce( new Vector3( ( flyToPlayer.x / fReducer ) / fMultiplier, ( flyToPlayer.magnitude * 0.4f ) * fMultiplier, ( flyToPlayer.z / fReducer ) / fMultiplier ) );
