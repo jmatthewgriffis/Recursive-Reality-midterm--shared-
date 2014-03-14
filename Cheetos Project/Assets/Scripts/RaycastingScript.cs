@@ -4,11 +4,17 @@ using System.Collections;
 public class RaycastingScript : MonoBehaviour {
 
 	public Transform blueprint; //assign in inspector
+	public GameObject putItHere;
+	bool startBox;
+	bool once;
 	
 	public static Collider collider1 = new Collider();
 
 	// Use this for initialization
 	void Start () {
+		putItHere.animation["box"].wrapMode = WrapMode.Once;
+		startBox = false;
+		once = true;
 	
 	}
 	
@@ -17,7 +23,8 @@ public class RaycastingScript : MonoBehaviour {
 
 
 		//ray = an origin (vector3) and direction (vector3)
-
+		
+		Debug.Log ("raycasting is working");
 
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); //initialize ray 
 		RaycastHit rayHit = new RaycastHit ();//blank container for info
@@ -25,16 +32,22 @@ public class RaycastingScript : MonoBehaviour {
 		//actually shoot the raycast now
 		if (Physics.Raycast ( ray, out rayHit, 1000f))
 		{
-
+			
 			collider1 = rayHit.collider;
 			Debug.Log(collider1.name);
 
 			if (collider1.name == "boxx"){
-				initBoxx();
+				startBox = true;
+			
+
 				Debug.Log ("this is when it would initiate box animation before transitioning");
 				//Application.LoadLevel ("dancingBaby"); //dancingBaby as example of scene title
-			}
+			} 
 
+			if (startBox && once) {
+				initBoxx();
+
+			}
 			//transform.LookAt(BoxCollider);// ( rayHit.point);
 			/*
 			if (Input.GetMouseButton (0)) {
@@ -49,11 +62,26 @@ public class RaycastingScript : MonoBehaviour {
 
 }
 
-	 void initBoxx(){
+	void initBoxx(){
+		putItHere.animation.Play("box");
+		//yield WaitForSeconds(1f);
 		Debug.Log ("initBoxx is running");
+		StartCoroutine (waiting());
+		startBox = false;
 
 		//rotate boxx y axis to face camera
 		//transform up and towards the player
+
+	}
+
+	IEnumerator waiting(){
+		Debug.Log ("waiting function");
+		
+		AutoFade.LoadLevel("scene2" ,3,1,Color.black);
+		yield return new WaitForSeconds(putItHere.animation["box"].length);
+		once = false;
+		putItHere.animation.Stop ("box");
+		//Application.LoadLevel ("scene1a");
 
 	}
 
