@@ -4,7 +4,7 @@ using System.Collections;
 
 public class eatCheeto : MonoBehaviour {
 	public AudioClip crunch;
-	public ParticleSystem crumbs;
+//	public ParticleSystem crumbs;
 
 	Transform scoreDisplay;
 
