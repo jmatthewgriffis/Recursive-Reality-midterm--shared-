@@ -4,7 +4,7 @@ using System.Collections;
 
 public class eatCheeto : MonoBehaviour {
 	public AudioClip crunch;
-//	public ParticleSystem crumbs;
+	public ParticleSystem crumbs;
 
 	Transform scoreDisplay;
 
@@ -24,7 +24,7 @@ public class eatCheeto : MonoBehaviour {
 		scoreDisplay.GetComponent<displayScore>().iScore++;
 		//play sound
 		audio.PlayOneShot (crunch);
-//		crumbs.Play; 
+		//crumbs.enableEmission;
 		Destroy(this);
 
 
