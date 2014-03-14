@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Example : MonoBehaviour {
+
+	public int littlebox;
 	void Update() {
 		float scaleX = Mathf.Cos(Time.time) * 0.5F + 1;
 		float scaleY = Mathf.Sin(Time.time) * 0.5F + 1;
