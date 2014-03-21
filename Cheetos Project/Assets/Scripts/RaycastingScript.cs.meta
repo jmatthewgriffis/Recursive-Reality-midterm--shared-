@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: a6960d82941254e4fb898c7c539f9342
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blueprint: {instanceID: 0}
+  - putItHere: {instanceID: 0}
+  - box_sound: {fileID: 8300000, guid: 22b601553647a4e2bad3041ab43df992, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
