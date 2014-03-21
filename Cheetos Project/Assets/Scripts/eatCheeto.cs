@@ -4,13 +4,14 @@ using System.Collections;
 
 public class eatCheeto : MonoBehaviour {
 	public AudioClip crunch;
-	public ParticleSystem crumbs;
 
 	Transform scoreDisplay;
+	Transform mouthObject;
 
 	// Use this for initialization
 	void Start () {
 		scoreDisplay = GameObject.Find("GuiDrawer").transform;
+		mouthObject = GameObject.Find("mouth").transform;
 	}
 	
 	// Update is called once per frame
@@ -24,9 +25,10 @@ public class eatCheeto : MonoBehaviour {
 		scoreDisplay.GetComponent<displayScore>().iScore++;
 		//play sound
 		audio.PlayOneShot (crunch);
-		//crumbs.enableEmission;
+		//cheeto crumbs
+		mouthObject.particleSystem.Play();
+		// Destroy cheeto.
 		Destroy(this);
-
 
 	}
 }
