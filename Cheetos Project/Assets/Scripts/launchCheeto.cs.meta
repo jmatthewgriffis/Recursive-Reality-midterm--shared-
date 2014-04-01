@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 448eb72f010bd436787dc25ee5b36408
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - launch: {instanceID: 0}
+  - zeObj: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

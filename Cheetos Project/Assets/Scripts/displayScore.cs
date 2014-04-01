@@ -14,5 +14,6 @@ public class displayScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		myText.text = "Score: " + iScore;
+		Debug.Log ("displayScore iScore = " + iScore);
 	}
 }

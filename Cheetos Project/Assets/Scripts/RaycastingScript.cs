@@ -7,8 +7,6 @@ public class RaycastingScript : MonoBehaviour {
 	public GameObject putItHere;
 	bool startBox;
 	bool once;
-	public AudioClip box_sound;
-//	Transform boxObject;
 	
 	public static Collider collider1 = new Collider();
 
@@ -17,9 +15,6 @@ public class RaycastingScript : MonoBehaviour {
 		putItHere.animation["box"].wrapMode = WrapMode.Once;
 		startBox = false;
 		once = true;
-//		boxObject = GameObject.Find("boxx").transform;
-//		boxObject.audio.PlayOneShot(box_sound);
-		AudioSource.PlayClipAtPoint(box_sound, new Vector3(1,0,-11));
 	
 	}
 	
@@ -91,8 +86,7 @@ public class RaycastingScript : MonoBehaviour {
 		once = false;
 		putItHere.animation.Stop ("box");
 		//Application.LoadLevel ("scene1a");
-		AudioSource.PlayClipAtPoint(box_sound, new Vector3(1,0,-11));
-		
+
 	}
 
 }
